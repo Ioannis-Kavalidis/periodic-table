@@ -1,0 +1,96 @@
+html {
+  font-size: 16px;
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+td {
+  width: 70px;
+  height: 70px;
+  border: 2px black solid;
+}
+.empty {
+  border: none;
+  background-color: white;
+}
+td:nth-child(2),
+.seventh td:nth-child(18) {
+  background-color: lightsalmon;
+}
+td:nth-child(1) {
+  background-color: lightblue;
+}
+/* giving specific rows the color light green */
+td:nth-child(4),
+td:nth-child(5),
+td:nth-child(6),
+td:nth-child(7),
+td:nth-child(8),
+td:nth-child(9),
+td:nth-child(10),
+td:nth-child(11),
+td:nth-child(12),
+.fourth td:nth-child(3),
+.fifth td:nth-child(3) {
+  background-color: lightgreen;
+}
+td:nth-child(18),
+.seventh td:nth-child(16) {
+  background-color: rgb(245, 132, 170);
+}
+/* giving specific squares the color brown */
+td:nth-child(17),
+.seventh td:nth-child(15) {
+  background-color: brown;
+}
+/* give the last horizontal row and some other extra squares with the color ligthskyblue  */
+tr:nth-last-child(1),
+tr:nth-last-child(2),
+.last td:nth-child(15),
+.seventh td:nth-child(3),
+.seventh td:nth-child(17),
+.last td:nth-child(n + 2):nth-child(-n + 15) {
+  background-color: lightskyblue;
+}
+/* give the secondtolast horizontal row and some other extra squares with the color ligthsteelblue  */
+.secondtolast td:nth-child(n + 2):nth-child(-n + 15),
+.sixth td:nth-child(3) {
+  background-color: lightsteelblue;
+}
+/* give the empty spaces/extra squares with the color white  */
+.first td:nth-child(n + 2):nth-child(-n + 17),
+.second td:nth-child(n + 3):nth-child(-n + 12),
+.third td:nth-child(n + 3):nth-child(-n + 12),
+.secondtolast td:nth-child(1),
+.last td:nth-child(1),
+.secondtolast td:nth-child(17),
+.secondtolast td:nth-child(18),
+.last td:nth-child(17),
+.last td:nth-child(18),
+.first td:nth-child(8),
+#empty {
+  background-color: white;
+}
+/* giving specific squares the color yellow */
+.second td:nth-child(n + 14):nth-child(-n + 16),
+.third td:nth-child(n + 15):nth-child(-n + 16),
+.fourth td:nth-child(16),
+tr .H {
+  background-color: yellow;
+}
+/* giving specific squares the color pink */
+.second td:nth-child(13),
+.third td:nth-child(13),
+.fourth td:nth-child(13),
+.fifth td:nth-child(n + 13):nth-child(-n + 14),
+.sixth td:nth-child(n + 13):nth-child(-n + 15),
+.seventh td:nth-child(n + 13):nth-child(-n + 14) {
+  background-color: pink;
+}
+/* giving specific squares a variation of color pink */
+.third td:nth-child(14),
+.fourth td:nth-child(n + 14):nth-child(-n + 15),
+.fifth td:nth-child(n + 15):nth-child(-n + 16),
+.sixth td:nth-child(16) {
+  background-color: rgb(223, 49, 156);
+}
